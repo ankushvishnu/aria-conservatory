@@ -20,9 +20,9 @@
 const AIRTABLE_TOKEN = process.env.AIRTABLE_TOKEN;
 const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
 const AIRTABLE_TABLE_NAME = process.env.AIRTABLE_TABLE_NAME || 'Leads';
-const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
-const SENDGRID_FROM = process.env.SENDGRID_FROM;
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+// const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+// const SENDGRID_FROM = process.env.SENDGRID_FROM;
+// const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 
 // Simple in-memory rate limiter map: { ip -> [timestamps...] }
 const RATE_MAP = new Map();
