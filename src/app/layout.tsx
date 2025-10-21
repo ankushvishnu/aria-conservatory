@@ -1,36 +1,29 @@
 // src/app/layout.tsx
-import './globals.css';
-import { ReactNode } from 'react';
-import SiteNav from '../components/SiteNav';
+import "./globals.css";
+import { ReactNode } from "react";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
-  title: 'Aria Conservatory of Music',
-  description: 'Aria Conservatory — Learn. Perform. Create. Pune • Studio Aria',
+  title: "Aria Conservatory of Music",
+  description: "Aria Conservatory — Learn. Perform. Create. Pune • Studio Aria",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white antialiased">
-        <header className="border-b border-white/6">
-          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <img src="/assets/1.png" alt="Aria logo" className="w-12 h-12 object-contain" />
-              <div>
-                <div className="font-semibold">Aria Conservatory of Music</div>
-                <div className="text-xs opacity-80">Pune • Studio Aria</div>
-              </div>
-            </div>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+        </head>
 
-            <nav>
-              <SiteNav />
-            </nav>
-          </div>
-        </header>
 
-        <main className="min-h-[70vh]">
-          {children}
-        </main>
+      <body className="bg-black text-white antialiased font-sans">
+        {/* Responsive Navbar (fixed at top) */}
+        <Navbar />
+
+        {/* main gets top padding so content isn't hidden behind fixed navbar */}
+        <main className="pt-20 min-h-[70vh]">{children}</main>
 
         <footer className="border-t border-white/6 mt-12">
           <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
