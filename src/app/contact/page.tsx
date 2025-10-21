@@ -20,7 +20,7 @@ export default function ContactPage() {
 
       <div className="mt-16 text-center opacity-90 text-sm">
         <p>
-          Studio Aria, Pune • Phone: +91 9XXXXXXXX • Email:&nbsp;
+          Studio Aria, Pune • Phone: +91 8788544255 • Email:&nbsp;
           <a href="mailto:hello@ariaconservatory.com" className="underline hover:text-orange-400">hello@ariaconservatory.com</a>
         </p>
       </div>
