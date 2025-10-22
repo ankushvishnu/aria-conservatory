@@ -44,6 +44,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/what-we-do", label: "What we do" },
     { href: "/services", label: "Our Services" },
+    { href: "/faculty", label: "Our Faculty" },
     { href: "/contact", label: "Contact Us" },
   ];
 
@@ -59,7 +60,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3" aria-label="Aria Conservatory Home">
             <div className="w-10 h-10 relative">
               <Image
-                src="/assets/1.png" // replace if using different logo
+                src="/assets/3.png" // replace if using different logo
                 alt="Aria Conservatory logo"
                 fill
                 sizes="40px"
@@ -85,13 +86,6 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="ml-2 px-4 py-2 rounded-md font-semibold"
-            style={{ background: ACCENT, color: "#000" }}
-          >
-            Enroll
-          </Link>
         </nav>
 
         {/* mobile controls */}
@@ -153,7 +147,7 @@ export default function Navbar() {
 
           <div className="pt-3 border-t border-white/6 text-sm opacity-80">
             <div>Studio Aria • Pune</div>
-            <div className="mt-2">Phone: +91 9XXXXXXXX</div>
+            <div className="mt-2">Phone: +91 8788544255</div>
             <div>Email: <a href="mailto:hello@ariaconservatory.com" className="underline">hello@ariaconservatory.com</a></div>
           </div>
         </div>

@@ -14,11 +14,11 @@ export const metadata = {
 const ACCENT = "#F57C20";
 
 export default function Home() {
-  const courses = [
-    { title: "Beginner", price: "₹2,500 / month" },
-    { title: "Intermediate", price: "₹4,500 / month" },
-    { title: "Advanced", price: "₹6,000 / month" },
-  ];
+  // const courses = [
+  //   { title: "Beginner", price: "₹2,500 / month" },
+  //   { title: "Intermediate", price: "₹4,500 / month" },
+  //   { title: "Advanced", price: "₹6,000 / month" },
+  // ];
 
   const testimonials = [
     { name: "Riya", text: "Aria transformed my confidence on stage — amazing teachers and recitals." },
@@ -27,8 +27,8 @@ export default function Home() {
   ];
 
   const blogPosts = [
-    { slug: "how-to-choose-your-first-guitar", title: "How to choose your first guitar", excerpt: "A quick guide for beginners — what matters and what doesn't.", image: "/assets/3.png" },
-    { slug: "student-spotlight-aria", title: "Student Spotlight: Riya's Journey", excerpt: "From first chord to stage performer — her story.", image: "/assets/1.png" },
+    { slug: "how-to-choose-your-first-guitar", title: "How to choose your first guitar", excerpt: "A quick guide for beginners — what matters and what doesn't.", image: "/assets/blog/guitar-guide.jpg" },
+    { slug: "student-spotlight-aria", title: "Student Spotlight: Riya's Journey", excerpt: "From first chord to stage performer — her story.", image: "/assets/blog/student-riya.jpg" },
   ];
 
   return (
@@ -144,17 +144,6 @@ export default function Home() {
                   </div>
                 </article>
               ))} */}
-            </div>
-
-            {/* Enquiry button under the description (redundant but user asked to add) */}
-            <div className="mt-4">
-              <Link
-                href="/contact"
-                className="inline-block px-4 py-2 rounded-md font-semibold text-sm"
-                style={{ background: ACCENT, color: "#000" }}
-              >
-                Enquire
-              </Link>
             </div>
           </div>
         </div>
