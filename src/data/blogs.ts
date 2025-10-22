@@ -5,26 +5,60 @@ export type BlogPost = {
   excerpt: string;
   date: string; // ISO date
   image: string; // path in /public
-  content: string; // HTML or plain text (for now)
+  content: string; // HTML
 };
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-choose-your-first-guitar",
     title: "How to choose your first guitar",
-    excerpt: "A quick guide for beginners — what matters and what doesn't when picking your first guitar.",
+    excerpt: "A quick, practical guide for beginners — what matters and what doesn't when picking the first guitar.",
     date: "2025-09-05",
     image: "/assets/blog/guitar-guide.jpg",
-    content: `<p>Choosing your first guitar can be exciting and a little overwhelming. Focus on playability, action, and feel. Try different neck shapes and string setups. For acoustic guitars, look at body size and tone; for electric, consider pickup types. Budget-friendly options abound — but make sure the instrument is comfortable for you.</p>
-    <p>At Aria Conservatory we help beginners choose a suitable instrument and provide starter kits. Book a trial to get personalized advice.</p>`,
+    content: `
+      <p>Choosing your first guitar can be exciting — and a little overwhelming. Here's a short checklist to help you decide:</p>
+      <ul>
+        <li><strong>Comfort & fit:</strong> If the neck or body feels uncomfortable, you'll practice less. Try different sizes (3/4, full, cutaway) and neck profiles.</li>
+        <li><strong>Playability:</strong> Low action (string height) and a smooth fretboard make learning easier. Ask a tech to setup any second-hand instrument.</li>
+        <li><strong>Acoustic vs Electric:</strong> Acoustic is great for songwriting and portability; electric is versatile for modern styles but needs an amp.</li>
+        <li><strong>Budget smart:</strong> You don’t need the most expensive instrument. Spend on a playable guitar and one good set of strings, and get lessons that focus on fundamentals.</li>
+      </ul>
+      <p>At Aria Conservatory we help every beginner test instruments and find the one that’s comfortable and inspiring. Book a trial and we’ll guide you through options that suit your budget and goals.</p>
+    `,
   },
   {
-    slug: "student-spotlight-riya",
-    title: "Student Spotlight: Riya's Journey",
-    excerpt: "From first chord to stage performer — Riya shares her journey through our structured program.",
-    date: "2025-10-01",
+    slug: "5-practice-tips-that-really-work",
+    title: "5 Practice Tips That Actually Work",
+    excerpt: "Short, practical practice advice that gives steady progress — used by our teachers at Aria.",
+    date: "2025-10-10",
+    image: "/assets/blog/5-guitar-tips.jpg",
+    content: `
+      <p>Progress in music happens through consistent, focused practice. Here are five simple ideas our students use:</p>
+      <ol>
+        <li><strong>Short daily sessions:</strong> 20–30 minutes every day beats a long session once a week. Consistency builds muscle memory.</li>
+        <li><strong>Warm-up with intention:</strong> Start with scales and simple techniques for 5–8 minutes to prepare the muscles and ears.</li>
+        <li><strong>Slow practice:</strong> Practice sections slowly and with a metronome. Speed follows accuracy.</li>
+        <li><strong>Record and review:</strong> Recording helps you hear timing and tuning issues you miss while playing.</li>
+        <li><strong>Small goals:</strong> Break songs into 30–60 second sections and celebrate small wins.</li>
+      </ol>
+      <p>Want a structured practice plan? At Aria we give every student a weekly plan that fits their schedule and goals.</p>
+    `,
+  },
+  {
+    slug: "student-spotlight-riya-journey",
+    title: "Student Spotlight — Riya's Journey",
+    excerpt: "From shy beginner to confident performer — Riya shares her Aria journey and practical tips for new students.",
+    date: "2025-10-18",
     image: "/assets/blog/student-riya.jpg",
-    content: `<p>Riya joined Aria in 2023 as a shy beginner. Progress with a structured practice schedule, guided repertoire and performance opportunities helped her build confidence. She now performs in monthly recitals and records with Studio Aria.</p>
-    <p>Her advice to new students: show up consistently and enjoy the process.</p>`,
+    content: `
+      <p>Riya joined Aria Conservatory as a beginner with a love for singing and a lot of stage anxiety. Over 18 months she progressed through structured vocal training, small group workshops, and monthly recitals.</p>
+      <p>Highlights of Riya's journey:</p>
+      <ul>
+        <li><strong>Technique first:</strong> working on breath support and pitch control with daily short exercises.</li>
+        <li><strong>Performance practice:</strong> low-stakes in-studio recitals helped her build stage confidence gradually.</li>
+        <li><strong>Recording sessions:</strong> learning to perform for a mic and understanding simple production added a new creative layer.</li>
+      </ul>
+      <p>Her advice: "Show up regularly, choose songs you love, and be patient with the process." Book a trial if you want a similar roadmap tailored to your goals.</p>
+    `,
   },
 ];

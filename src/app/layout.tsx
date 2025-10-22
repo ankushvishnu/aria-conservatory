@@ -2,6 +2,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
+import Analytics from "@/components/Analytics";
 
 export const metadata = {
   title: "Aria Conservatory of Music",
@@ -11,14 +12,48 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-        <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-        </head>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#000000" />
+
+        {/* Basic SEO / Open Graph defaults */}
+        <meta property="og:site_name" content="Aria Conservatory of Music" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Aria Conservatory — Learn. Perform. Create." />
+        <meta property="og:description" content="Private & group lessons for guitar, piano, vocals and music production in Pune. Book a free trial." />
+        <meta property="og:image" content="/og/aria-og.png" />
+        <meta property="og:url" content="https://ariaconservatory.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Google font */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+      </head>
+
 
 
       <body className="bg-black text-white antialiased font-sans">
+                  {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ? (
+            <>
+              {/* Global site tag (gtag.js) - Google Analytics */}
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
+              <script
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', { send_page_view: false });
+                  `,
+                }}
+              />
+              {/* Client-side route pageview tracker */}
+              <div id="analytics-root"><Analytics /></div>
+            </>
+          ) : null}
+
         {/* Responsive Navbar (fixed at top) */}
         <Navbar />
 
