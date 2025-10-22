@@ -8,6 +8,7 @@ export default function SiteNav() {
       <Link href="/" className={linkClass}>Home</Link>
       <Link href="/what-we-do" className={linkClass}>What we do</Link>
       <Link href="/services" className={linkClass}>Our Services</Link>
+      <Link href="/faculty" className={linkClass}>Our Faculty</Link>
       <Link href="/contact" className="px-3 py-2 text-sm font-semibold rounded-md" style={{ background: '#F57C20', color: '#000' }}>Contact Us</Link>
     </div>
   );
