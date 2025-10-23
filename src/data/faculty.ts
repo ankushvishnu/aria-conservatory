@@ -20,7 +20,7 @@ export const faculty: FacultyMember[] = [
   {
     id: "Tej",
     name: "Tej Badbade",
-    role: "Drums, Rhythm Techniques & Purcussion",
+    role: "Drums, Rhythm Techniques & Percussion",
     bio: "Tej focuses on rhythm foundations, techniques and accompaniment. He tailors lesson plans for each student's goals.",
     image: "/assets/faculty/Tej.jpg",
     socials: [{ type: "instagram", url: "https://instagram.com/tezztej" }],
