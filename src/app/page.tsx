@@ -59,14 +59,34 @@ export default function Home() {
         </Link>
       </div> */}
 
-      <div className="mt-4 flex flex-wrap gap-3">
-        <Link href="/contact" className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-3 rounded-full font-semibold text-sm" style={{ background: ACCENT, color: "#000" }}>
-          Book a Free Trial
-        </Link>
-        <Link href="/what-we-do" className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-3 rounded-full text-sm border border-white/10">
-          Learn More
-        </Link>
-      </div>
+      {/* CTA cluster: Call Now / Book Free Trial / Learn More */}
+<div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:gap-3 gap-3">
+  {/* 1) Call Now - primary */}
+  <a
+    href="tel:+918788544255"
+    aria-label="Call Aria Conservatory"
+    className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-sm"
+    style={{ background: "#F57C20", color: "#000" }}
+  >
+    Call Now
+  </a>
+
+  {/* 2) Book Free Trial - secondary */}
+  <a
+    href="/contact"
+    className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-sm border border-white/10 bg-white/5"
+  >
+    Book Free Trial
+  </a>
+
+  {/* 3) Learn More - ghost */}
+  <a
+    href="/what-we-do"
+    className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-full text-sm"
+  >
+    Learn More
+  </a>
+</div>
 
       <div className="mt-6 flex gap-6 items-center">
         <div>
