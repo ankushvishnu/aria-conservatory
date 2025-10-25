@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main className="pt-20 min-h-[70vh]">{children}</main>
 
 {/* Floating call CTA (hidden on Home page) */}
-<CallCTAWrapper phone="+919XXXXXXXXX" />
+<CallCTAWrapper phone="+918788544255" />
 
         <footer className="border-t border-white/6 mt-12">
           <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
