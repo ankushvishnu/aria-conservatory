@@ -4,7 +4,7 @@ import React from "react";
 
 type Props = { phone?: string };
 
-export default function CallCTA({ phone = "+919XXXXXXXXX" }: Props) {
+export default function CallCTA({ phone = "+918788544255" }: Props) {
   return (
     <a
       href={`tel:${phone}`}
