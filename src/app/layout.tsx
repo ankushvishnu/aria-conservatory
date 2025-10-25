@@ -4,6 +4,8 @@ import { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import Analytics from "@/components/Analytics";
 
+import CallCTAWrapper from "@/components/CallCTAWrapper";
+
 export const metadata = {
   title: "Aria Conservatory of Music",
   description: "Aria Conservatory — Learn. Perform. Create. Pune • Studio Aria",
