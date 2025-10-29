@@ -44,21 +44,4 @@ export const blogPosts: BlogPost[] = [
       <p>Want a structured practice plan? At Aria we give every student a weekly plan that fits their schedule and goals.</p>
     `,
   },
-  {
-    slug: "student-spotlight-riya-journey",
-    title: "Student Spotlight — Riya's Journey",
-    excerpt: "From shy beginner to confident performer — Riya shares her Aria journey and practical tips for new students.",
-    date: "2025-10-18",
-    image: "/assets/blog/student-riya.jpg",
-    content: `
-      <p>Riya joined Aria Conservatory as a beginner with a love for singing and a lot of stage anxiety. Over 18 months she progressed through structured vocal training, small group workshops, and monthly recitals.</p>
-      <p>Highlights of Riya's journey:</p>
-      <ul>
-        <li><strong>Technique first:</strong> working on breath support and pitch control with daily short exercises.</li>
-        <li><strong>Performance practice:</strong> low-stakes in-studio recitals helped her build stage confidence gradually.</li>
-        <li><strong>Recording sessions:</strong> learning to perform for a mic and understanding simple production added a new creative layer.</li>
-      </ul>
-      <p>Her advice: "Show up regularly, choose songs you love, and be patient with the process." Book a trial if you want a similar roadmap tailored to your goals.</p>
-    `,
-  },
 ];
