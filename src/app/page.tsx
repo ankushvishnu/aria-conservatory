@@ -28,7 +28,6 @@ export default function Home() {
 
   const blogPosts = [
     { slug: "how-to-choose-your-first-guitar", title: "How to choose your first guitar", excerpt: "A quick guide for beginners — what matters and what doesn't.", image: "/assets/blog/guitar-guide.jpg" },
-    { slug: "student-spotlight-aria", title: "Student Spotlight: Riya's Journey", excerpt: "From first chord to stage performer — her story.", image: "/assets/blog/student-riya.jpg" },
   ];
 
   return (
